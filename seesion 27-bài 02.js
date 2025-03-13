@@ -19,7 +19,7 @@ do {
         case 1: 
             let count = Number(prompt("Nhập số lượng sinh viên:"));
             if (isNaN(count) || count <= 0) {
-                console.log("⚠️ Số lượng không hợp lệ! Hãy nhập số dương.");
+                console.log("Số lượng không hợp lệ! Hãy nhập số dương.");
                 break;
             }
             for (let i = 0; i < count; i++) {
@@ -27,7 +27,7 @@ do {
                 do {
                     name = prompt(`Nhập tên sinh viên thứ ${i + 1}:`).trim();
                     if (!name) {
-                        console.log("⚠️ Tên sinh viên không hợp lệ! Hãy nhập lại.");
+                        console.log(" Tên sinh viên không hợp lệ! Hãy nhập lại.");
                     }
                 } while (!name);
                 students.push(name);
